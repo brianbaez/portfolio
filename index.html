@@ -20,7 +20,7 @@
 
   <body>
     <header>
-      <nav class="nav">
+      <nav>
         <p class="nav__title"><a class="nav__link" href="#">Brian Baez</a></p>
         <ul class="nav__list">
           <li class="nav__item"><a class="nav__link" href="#about">About</a></li>
@@ -28,7 +28,7 @@
           <li class="nav__item"><a class="nav__link" href="#experience">Experience</a></li>
           <li class="nav__item"><a class="nav__link" href="#projects">Projects</a></li>
           <li class="nav__item"><a class="nav__link" href="#contact">Contact</a></li>
-          <li class="nav__item"><a class="nav__link" href="https://cdn-images.zety.com/images/zety/landings/examples/nurse-resume-example@2x.png" target="_blank">Resume</a></li>
+          <li class="nav__item"><a class="nav__link far fa-sun" href="#"></a></li>
         </ul>
       </nav>
     </header>
@@ -36,29 +36,40 @@
     <main>
       <!-- Home Section -->
       <section class="intro" id="home">
-        <p class="section__subtitle section__subtitle--intro">Hi, I'm</p>
-        <h1 class="section__title section__title--intro">Brian Baez</h1>
-        <p class="section__subtitle section__subtitle--intro">Full Stack Developer</p>
+        <div class="intro__container">
+          <div class="intro__greeting">
+            <h1 class="section__title intro__hello">Hi, I'm</h1>
+            <h1 class="section__title intro__name">Brian Baez</h1>
+            <h1 class="section__title intro__position">Full Stack Developer</h1>
+          </div>
 
-        <div class="social-media">
-          <ul class="social-media__list">
-            <li class="social-media__item"><a class="social-media__link fab fa-linkedin fa-3x" href="https://linkedin.com/in/brianbaez" target="_blank"></a></li>
-            <li class="social-media__item"><a class="social-media__link fab fa-github-square fa-3x" href="https://github.com/brianbaez" target="_blank"></a></li>
-            <li class="social-media__item"><a class="social-media__link fas fa-envelope-square fa-3x" href="mailto:brianbaez.dev@gmail.com"></a></li>
-          </ul>
+          <div class="intro__social-media">
+            <ul class="social-media__list">
+              <li class="social-media__item"><a class="social-media__link fab fa-linkedin fa-3x" href="https://linkedin.com/in/brianbaez" target="_blank"></a></li>
+              <li class="social-media__item"><a class="social-media__link fab fa-github-square fa-3x" href="https://github.com/brianbaez" target="_blank"></a></li>
+              <li class="social-media__item"><a class="social-media__link fas fa-envelope-square fa-3x" href="mailto:brianbaez.dev@gmail.com"></a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="intro__arrow bounce">
+          <a class="arrow fas fa-chevron-down fa-3x" href="#about"></a>
         </div>
       </section>
 
       <!-- About Section -->
       <section class="about-me" id="about">
-        <h2 class="section__title section__title--about">About</h2>
         <div class="about__container">
-          <p>Hi! I'm Brian, a recent Computer Science graduate from the University of Illinois at Chicago who loves to build websites</p>
-          <p>I build responsive web applications with JavaScript, MongoDB, and Node.js with a great UI/UX in mind</p>
-          <p>Aside from coding, my interests include video games, reading, biology, and astronomy</p>
+          <h2 class="section__title section__title--about">About</h2>
+          <p>Hi! I'm Brian, a recent Computer Science graduate from the <span>University of Illinois at Chicago</span> who loves to build websites.</p>
+          <p>I build responsive web applications with <span>HTML</span>, <span>CSS</span>, <span>JavaScript</span>, and the <span>MERN stack</span>.</p>
+          <p>I am dedicated to learning new technologies that can help me improve my coding skills.</p>
+          <p>Aside from coding, my interests include <span>video games</span>, <span>reading</span>, <span>biology</span>, and <span>astronomy</span>.</p>
           <p>Feel free to send me a message!</p>
+          <div class="about__contact-container">
+            <a class="button" href="#contact">Get In Touch</a>
+          </div>
         </div>
-        <a class="about__contact-link" href="#contact">Get In Touch</a>
       </section>
 
       <!-- Skills Section -->
@@ -78,6 +89,10 @@
             <p class="skills__name">JavaScript</p>
           </div>
           <div class="skills__box">
+            <i class="skills__icon devicon-sass-original colored"></i>
+            <p class="skills__name">Sass</p>
+          </div>
+          <div class="skills__box">
             <i class="skills__icon devicon-bootstrap-plain colored"></i>
             <p class="skills__name">Bootstrap</p>
           </div>
@@ -86,22 +101,26 @@
             <p class="skills__name">jQuery</p>
           </div>
           <div class="skills__box">
-            <i class="skills__icon devicon-nodejs-plain colored"></i>
-            <p class="skills__name">Node.js</p>
-          </div>
-          <div class="skills__box">
             <i class="skills__icon devicon-mongodb-plain colored"></i>
             <p class="skills__name">MongoDB</p>
           </div>
           <div class="skills__box">
-            <i class="skills__icon devicon-github-original"></i>
-            <p class="skills__name">GitHub</p>
+            <i class="skills__icon devicon-express-original colored"></i>
+            <p class="skills__name">ExpressJS</p>
+          </div>
+          <div class="skills__box">
+            <i class="skills__icon devicon-react-original colored"></i>
+            <p class="skills__name">ReactJS</p>
+          </div>
+          <div class="skills__box">
+            <i class="skills__icon devicon-nodejs-plain colored"></i>
+            <p class="skills__name">NodeJS</p>
           </div>
           <div class="skills__box">
             <i class="skills__icon devicon-git-plain colored"></i>
             <p class="skills__name">Git</p>
           </div>
-          <div class="skilsl__box">
+          <div class="skills__box">
             <i class="skills__icon devicon-atom-original colored"></i>
             <p class="skills__name">Atom</p>
           </div>
@@ -113,22 +132,25 @@
         <h2 class="section__title section__title--experience">Experience</h2>
         <div class="employer__container">
           <div class="employer__item">
-            <img class="employer__logo" src="./assets/img/home-depot-logo.png" alt="home-depot-logo">
-            <h3 class="section__subtitle section__subtitle--employer">The Home Depot</h3>
-            <p class="employer__title">Freight Team Associate</p>
-            <p class="employer__years">2016 - Present</p>
+            <div class="employer__description">
+              <p class="section__subtitle section__subtitle--employer">The Home Depot</p>
+              <p class="employer__title">Freight Team Associate</p>
+              <p class="employer__years">2016 - Present</p>
+            </div>
           </div>
           <div class="employer__item">
-            <img class="employer__logo" src="./assets/img/uic-logo.png" alt="uic-logo">
-            <h3 class="section__subtitle section__subtitle--employer">The University of Illinois at Chicago</h3>
-            <p class="employer__title">Teaching Aide/Undergraduate Grader</p>
-            <p class="employer__years">2017 - 2021</p>
+            <div class="employer__description">
+              <p class="section__subtitle section__subtitle--employer">The University of Illinois at Chicago</p>
+              <p class="employer__title">Teaching Aide/Undergraduate Grader</p>
+              <p class="employer__years">2017 - 2021</p>
+            </div>
           </div>
           <div class="employer__item">
-            <img class="employer__logo" src="./assets/img/chipotle-logo.png" alt="chipotle-logo">
-            <h3 class="section__subtitle section__subtitle--employer">Chipotle Mexican Grill</h3>
-            <p class="employer__title">Restaurant Team Member</p>
-            <p class="employer__years">2015 - 2016</p>
+            <div class="employer__description">
+              <p class="section__subtitle section__subtitle--employer">Chipotle Mexican Grill</p>
+              <p class="employer__title">Restaurant Team Member</p>
+              <p class="employer__years">2015 - 2016</p>
+            </div>
           </div>
         </div>
       </section>
@@ -138,50 +160,25 @@
         <h2 class="section__title section__title--projects">Projects</h2>
         <div class="project__container">
           <div class="project__item">
-            <img class="project__img" src="" alt="project-image">
-            <h3 class="section__subtitle section__subtitle--projects">Portfolio</h3>
-            <p class="project__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <div class="project__skills">
-              <i class="skills__icon skills__icon--project devicon-html5-plain"></i>
-              <i class="skills__icon skills__icon--project devicon-css3-plain"></i>
-              <i class="skills__icon skills__icon--project devicon-javascript-plain"></i>
+            <div class="project__display">
+              <div class="project__display--image">
+                <img class="image-mockup" src="./assets/img/portfolio.png" alt="portfolio-image">
+              </div>
+              <div class="project__display--links">
+                <a class="button project__link project__link--live" href="#">Live Demo</a>
+                <a class="button project__link project__link--code" href="https://github.com/brianbaez/portfolio" target="_blank">View Code</a>
+              </div>
             </div>
-            <a class="project__link project__link--live" href="https://google.com/" target="_blank">Live Demo</a>
-            <a class="project__link project__link--code" href="https://github.com/brianbaez" target="_blank">View Code</a>
-          </div>
-          <div class="project__item">
-            <img src="" alt="project-image">
-            <h3 class="section__subtitle section__subtitle--projects">Project Title</h3>
-            <p class="project__description">Aliquet sagittis id consectetur purus ut faucibus pulvinar elementum. Egestas purus viverra accumsan in nisl nisi. In dictum non consectetur a erat nam at lectus. Mattis vulputate enim nulla aliquet
-              porttitor lacus. Erat nam at lectus urna. Cras sed felis eget velit aliquet sagittis. Massa id neque aliquam vestibulum morbi blandit cursus.
-            </p>
-            <div class="project__skills">
-              <i class="skills__icon skills__icon--project devicon-html5-plain"></i>
-              <i class="skills__icon skills__icon--project devicon-css3-plain"></i>
-              <i class="skills__icon skills__icon--project devicon-javascript-plain"></i>
-              <i class="skills__icon skills__icon--project devicon-bootstrap-plain"></i>
-              <i class="skills__icon skills__icon--project devicon-jquery-plain"></i>
+            <div class="project__description">
+              <p class="section__subtitle section__subtitle--projects">Portfolio</p>
+              <p class="project__summary">This portfolio website! It was the first project I created and features a responsive design, light/dark mode, and JavaScript animations using GSAP.</p>
+              <div class="project__skills">
+                <p>Technologies Used</p>
+                <i class="skills__icon skills__icon--project devicon-html5-plain"></i>
+                <i class="skills__icon skills__icon--project devicon-css3-plain"></i>
+                <i class="skills__icon skills__icon--project devicon-javascript-plain"></i>
+              </div>
             </div>
-            <a class="project__link project__link--live" href="https://google.com/" target="_blank">Live Demo</a>
-            <a class="project__link project__link--code" href="https://github.com/brianbaez" target="_blank">View Code</a>
-          </div>
-          <div class="project__item">
-            <img src="" alt="project-image">
-            <h3 class="section__subtitle section__subtitle--projects">Portfolio</h3>
-            <p class="project__description">Curabitur vitae nunc sed velit dignissim sodales. Eget egestas purus viverra accumsan in nisl nisi scelerisque. Enim sed faucibus turpis in eu. Semper auctor neque vitae tempus quam. Enim eu turpis egestas
-              pretium aenean pharetra magna. Quis viverra nibh cras pulvinar mattis.
-            </p>
-            <div class="project__skills">
-              <i class="skills__icon skills__icon--project devicon-html5-plain"></i>
-              <i class="skills__icon skills__icon--project devicon-css3-plain"></i>
-              <i class="skills__icon skills__icon--project devicon-javascript-plain"></i>
-              <i class="skills__icon skills__icon--project devicon-jquery-plain"></i>
-              <i class="skills__icon skills__icon--project devicon-nodejs-plain"></i>
-              <i class="skills__icon skills__icon--project devicon-mongodb-plain"></i>
-              <i class="skills__icon skills__icon--project devicon-git-plain"></i>
-            </div>
-            <a class="project__link project__link--live" href="https://google.com/" target="_blank">Live Demo</a>
-            <a class="project__link project__link--code" href="https://github.com/brianbaez" target="_blank">View Code</a>
           </div>
         </div>
       </section>
@@ -190,28 +187,25 @@
       <section class="contact-me" id="contact">
         <h2 class="section__title section__title--contact">Contact Me</h2>
         <div class="contact__container">
-          <h3 class="section__subtitle section__subtitle--contact">Let's Get In Touch</h3>
-          <p>Interested in working together, chatting about some of my work, or geek out over Star Wars?</p>
-          <p>Leave a message below and I look forward to meeting you!</p>
+          <p class="section__subtitle section__subtitle--contact">Let's Get In Touch</p>
+          <div class="contact__prompt">
+            <p>Interested in working together, chatting about some of my work, or geek out over Star Wars?</p>
+            <p>Leave a message below and I look forward to meeting you!</p>
+          </div>
           <form class="contact__form" action="index.html" method="post">
-            <div class="form__name">
-              <label for="name">Name</label>
-              <input type="text" name="name" placeholder="Enter Your Name" required>
-            </div>
-            <div class="form__email">
-              <label for="email">Email</label>
-              <input type="email" name="email" placeholder="Enter Your Email" required>
-            </div>
-            <div class="form__message">
-              <label for="message">Message</label>
-              <textarea name="message" rows="10" cols="40" placeholder="Enter a Message" required></textarea>
-            </div>
+            <input type="text" name="name" placeholder="Name" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <textarea name="message" rows="10" placeholder="Message" required></textarea>
+            <button class="button" type="submit" name="button">Send</button>
           </form>
         </div>
       </section>
     </main>
 
     <footer>
+      <a class="social-media__footer fab fa-linkedin fa-2x" href="https://www.linkedin.com/in/brianbaez/"></a>
+      <a class="social-media__footer fab fa-github-square fa-2x" href="https://github.com/brianbaez"></a>
+      <a class="social-media__footer fas fa-envelope-square fa-2x" href="mailto:brianbaez.bab@gmail.com"></a>
       <p class="copyright">© 2022 Brian Baez</p>
     </footer>
   </body>
