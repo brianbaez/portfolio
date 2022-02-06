@@ -1,0 +1,24 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --clr-light: #FFF;
+  --clr-dark: #102734;
+  --clr-accent: #C3423F;
+  --ff-headings: 'Roboto Mono', monospace;
+  --ff-body: 'Roboto', sans-serif;
+  --fw-bold: 700;
+  --fw-regular: 500;
+  --fw-light: 300;
+  --fs-h1: 3.75rem;
+  --fs-h2: 2.75rem;
+  --fs-h3: 2rem;
+  --fs-body: 1.25rem;
+  --fs-logo: 1.75rem;
+  --fs-name: 6.5rem;
+  --fs-contact-form: 1.375rem;
+  --fs-footer: 1rem;
+}
