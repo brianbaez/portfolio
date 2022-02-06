@@ -70,7 +70,7 @@ footer {
   font-family: var(--ff-headings);
 }
 
-.nav .logo a {
+.nav__logo a {
   font-size: var(--fs-logo);
 }
 
@@ -93,4 +93,9 @@ footer {
 
 .skill__name {
   font-family: var(--ff-headings);
+}
+
+body {
+  background: var(--clr-light);
+  line-height: 1.5;
 }

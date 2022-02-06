@@ -80,7 +80,7 @@ footer {
 .nav {
   font-family: var(--ff-headings);
 
-  .logo a {
+  &__logo a {
     font-size: var(--fs-logo);
   }
 
@@ -110,4 +110,11 @@ footer {
   &__name {
     font-family: var(--ff-headings);
   }
+}
+
+// General Styles
+// Body
+body {
+  background: var(--clr-light);
+  line-height: 1.5;
 }
