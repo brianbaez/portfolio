@@ -22,3 +22,75 @@
   --fs-contact-form: 1.375rem;
   --fs-footer: 1rem;
 }
+
+h1, h2, h3 {
+  font-family: var(--ff-headings);
+  line-height: 1;
+}
+
+h2, h3 {
+  font-weight: var(--fw-regular);
+}
+
+h1 {
+  font-size: var(--fs-h1);
+  font-weight: var(--fw-bold);
+}
+
+h2 {
+  font-size: var(--fs-h2);
+}
+
+h3 {
+  font-size: var(--fs-h3);
+}
+
+body {
+  font-family: var(--ff-body);
+  font-size: var(--fs-body);
+  font-weight: var(--fw-light);
+  color: var(--clr-dark);
+}
+
+input, textarea {
+  font-family: var(--ff-headings);
+  font-size: var(--fs-contact-form);
+}
+
+footer {
+  font-family: var(--ff-headings);
+  font-size: var(--fs-footer);
+}
+
+.section__title {
+  color: var(--clr-accent);
+}
+
+.nav {
+  font-family: var(--ff-headings);
+}
+
+.nav .logo a {
+  font-size: var(--fs-logo);
+}
+
+.nav__link {
+  color: var(--clr-dark);
+}
+
+.hero__hello, .hero__name {
+  color: var(--clr-dark);
+}
+
+.hero__position {
+  color: var(--clr-accent);
+}
+
+.about-me span {
+  color: var(--clr-accent);
+  font-weight: var(--fw-bold);
+}
+
+.skill__name {
+  font-family: var(--ff-headings);
+}
