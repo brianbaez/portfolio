@@ -29,7 +29,7 @@
   --fs-nav-link: 2.5rem;
   --fs-name: 6.5rem;
   --fs-contact-form: 1.375rem;
-  --fs-footer: 1rem;
+  --fs-footer: 1.25rem;
 }
 
 // Typography
@@ -454,6 +454,8 @@ section {
 
 // Contact Section
 .contact-me {
+  margin-bottom: 0;
+
   &__prompt {
     margin-bottom: 1em;
 
@@ -472,6 +474,25 @@ section {
       margin-bottom: 1em;
       border: 0.0625em solid var(--clr-primary);
       padding: 0.5em;
+    }
+  }
+}
+
+// Footer
+footer {
+  margin: 2em 0 1em;
+  text-align: center;
+  width: 100%;
+
+  a {
+    font-size: 3rem;
+    text-decoration: none;
+    color: var(--clr-primary);
+    margin: 0.25em;
+
+    &:hover {
+      color: var(--clr-accent);
+      transition: 0.5s;
     }
   }
 }
