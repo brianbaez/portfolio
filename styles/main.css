@@ -220,3 +220,13 @@ header .nav__hamburger, header .nav__hamburger:before, header .nav__hamburger:af
 .nav__open .nav__hamburger:after {
   opacity: 0;
 }
+
+section {
+  text-align: center;
+  padding: 0 1em;
+  margin: 0 auto;
+}
+
+.project__image img {
+  max-width: 100%;
+}

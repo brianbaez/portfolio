@@ -242,3 +242,16 @@ header {
     }
   }
 }
+
+// Section
+section {
+  text-align: center;
+  padding: 0 1em;
+  margin: 0 auto;
+}
+
+.project {
+  &__image img {
+    max-width: 100%;
+  }
+}
