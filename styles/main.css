@@ -405,3 +405,24 @@ section {
 .project__description__links a:first-child {
   margin-right: 0.75em;
 }
+
+.contact-me__prompt {
+  margin-bottom: 1em;
+}
+
+.contact-me__prompt p:last-child {
+  margin-top: 0.25em;
+}
+
+.contact-me__form form {
+  display: flex;
+  flex-direction: column;
+  padding: 2.5em;
+  border: 0.125em solid var(--clr-primary);
+}
+
+.contact-me__form form input, .contact-me__form form textarea {
+  margin-bottom: 1em;
+  border: 0.0625em solid var(--clr-primary);
+  padding: 0.5em;
+}

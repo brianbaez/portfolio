@@ -450,5 +450,28 @@ section {
       }
     }
   }
+}
 
+// Contact Section
+.contact-me {
+  &__prompt {
+    margin-bottom: 1em;
+
+    p:last-child {
+      margin-top: 0.25em;
+    }
+  }
+
+  &__form form {
+    display: flex;
+    flex-direction: column;
+    padding: 2.5em;
+    border: 0.125em solid var(--clr-primary);
+
+    input, textarea {
+      margin-bottom: 1em;
+      border: 0.0625em solid var(--clr-primary);
+      padding: 0.5em;
+    }
+  }
 }
