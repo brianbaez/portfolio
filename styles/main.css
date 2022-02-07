@@ -123,6 +123,7 @@ header .nav {
   position: fixed;
   width: 100%;
   top: 0;
+  z-index: 10;
 }
 
 header .nav__menu {
@@ -236,6 +237,72 @@ section {
   padding: 0 1em;
   margin: 0 auto;
   scroll-margin-top: 5vh;
+}
+
+.container__hero {
+  text-align: left;
+  width: 100%;
+}
+
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.hero__social-media {
+  margin-top: 2em;
+}
+
+.hero__social-media__list {
+  display: flex;
+  list-style: none;
+}
+
+.hero__social-media__item {
+  padding-right: 1em;
+}
+
+.hero__social-media__link {
+  color: var(--clr-primary);
+}
+
+.hero__social-media__link:hover {
+  color: var(--clr-accent);
+  transition: 0.5s;
+}
+
+.hero__arrow {
+  position: absolute;
+  bottom: 5em;
+}
+
+.hero__arrow a {
+  text-decoration: none;
+  color: var(--clr-primary);
+}
+
+.hero__arrow a:hover {
+  color: var(--clr-accent);
+  transition: 0.5s;
+}
+
+.bounce {
+  -moz-animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
 }
 
 .project__image img {

@@ -142,6 +142,7 @@ header {
     position: fixed;
     width: 100%;
     top: 0;
+    z-index: 10;
 
     &__menu {
       background: var(--clr-secondary);
@@ -261,6 +262,78 @@ section {
   scroll-margin-top: 5vh;
 }
 
+// Container
+.container {
+  &__hero {
+    text-align: left;
+    width: 100%;
+  }
+}
+
+// Hero Section
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+
+  &__social-media {
+    margin-top: 2em;
+
+    &__list {
+      display: flex;
+      list-style: none;
+    }
+
+    &__item {
+      padding-right: 1em;
+    }
+
+    &__link {
+      color: var(--clr-primary);
+
+      &:hover {
+        color: var(--clr-accent);
+        transition: 0.5s;
+      }
+    }
+  }
+
+  &__arrow {
+    position: absolute;
+    bottom: 5em;
+
+    a {
+      text-decoration: none;
+      color: var(--clr-primary);
+
+      &:hover {
+        color: var(--clr-accent);
+        transition: 0.5s;
+      }
+    }
+  }
+}
+
+// Arrow Bounce
+.bounce {
+  -moz-animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+// Project Section
 .project {
   &__image img {
     max-width: 100%;
