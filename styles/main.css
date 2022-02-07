@@ -5,8 +5,8 @@
 }
 
 :root {
-  --clr-light: #FFF;
-  --clr-dark: #102734;
+  --clr-primary: #102734;
+  --clr-secondary: #FFF;
   --clr-accent: #C3423F;
   --ff-headings: 'Roboto Mono', monospace;
   --ff-body: 'Roboto', sans-serif;
@@ -50,7 +50,7 @@ body {
   font-family: var(--ff-body);
   font-size: var(--fs-body);
   font-weight: var(--fw-light);
-  color: var(--clr-dark);
+  color: var(--clr-primary);
 }
 
 input, textarea {
@@ -73,16 +73,16 @@ footer {
 
 .nav__logo a {
   font-size: var(--fs-logo);
-  color: var(--clr-dark);
+  color: var(--clr-primary);
 }
 
-.nav__link {
-  color: var(--clr-dark);
+.nav__link, .nav__dark-mode {
+  color: var(--clr-primary);
   font-size: var(--fs-nav-link);
 }
 
 .hero__hello, .hero__name {
-  color: var(--clr-dark);
+  color: var(--clr-primary);
 }
 
 .hero__position {
@@ -103,7 +103,7 @@ html {
 }
 
 body {
-  background: var(--clr-light);
+  background: var(--clr-secondary);
   line-height: 1.5;
 }
 
@@ -113,7 +113,7 @@ header {
 }
 
 header .nav {
-  background: var(--clr-light);
+  background: var(--clr-secondary);
   min-height: 5vh;
   padding: 0 1em;
   display: flex;
@@ -125,7 +125,7 @@ header .nav {
 }
 
 header .nav__menu {
-  background: var(--clr-light);
+  background: var(--clr-secondary);
   position: fixed;
   top: 0;
   bottom: 0;
@@ -194,7 +194,7 @@ header .nav__hamburger:after {
 }
 
 header .nav__hamburger, header .nav__hamburger:before, header .nav__hamburger:after {
-  background: var(--clr-dark);
+  background: var(--clr-primary);
   width: 2em;
   height: 3px;
   border-radius: 1em;

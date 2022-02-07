@@ -7,8 +7,8 @@
 // Custom Properties
 :root {
   // Colors
-  --clr-light: #FFF;
-  --clr-dark: #102734;
+  --clr-primary: #102734;
+  --clr-secondary: #FFF;
   --clr-accent: #C3423F;
 
   // Font Families
@@ -59,7 +59,7 @@ body {
   font-family: var(--ff-body);
   font-size: var(--fs-body);
   font-weight: var(--fw-light);
-  color: var(--clr-dark);
+  color: var(--clr-primary);
 }
 
 input, textarea {
@@ -83,18 +83,18 @@ footer {
 
   &__logo a {
     font-size: var(--fs-logo);
-    color: var(--clr-dark);
+    color: var(--clr-primary);
   }
 
-  &__link {
-    color: var(--clr-dark);
+  &__link, &__dark-mode {
+    color: var(--clr-primary);
     font-size: var(--fs-nav-link);
   }
 }
 
 .hero {
   &__hello, &__name {
-    color: var(--clr-dark);
+    color: var(--clr-primary);
   }
 
   &__position {
@@ -123,7 +123,7 @@ html {
 
 // Body
 body {
-  background: var(--clr-light);
+  background: var(--clr-secondary);
   line-height: 1.5;
 }
 
@@ -132,7 +132,7 @@ header {
   height: 100vh;
 
   .nav {
-    background: var(--clr-light);
+    background: var(--clr-secondary);
     min-height: 5vh;
     padding: 0 1em;
     display: flex;
@@ -143,7 +143,7 @@ header {
     top: 0;
 
     &__menu {
-      background: var(--clr-light);
+      background: var(--clr-secondary);
       position: fixed;
       top: 0;
       bottom: 0;
@@ -212,7 +212,7 @@ header {
     }
 
     &__hamburger, &__hamburger:before, &__hamburger:after {
-      background: var(--clr-dark);
+      background: var(--clr-primary);
       width: 2em;
       height: 3px;
       border-radius: 1em;
