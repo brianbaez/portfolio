@@ -27,7 +27,7 @@ navDarkMode.addEventListener("click", () => {
   }
   else {
     root.style.setProperty("--clr-primary", "#102734");
-    root.style.setProperty("--clr-secondary", "FFF");
+    root.style.setProperty("--clr-secondary", "#FFF");
 
     navDarkMode.classList.replace("fa-sun", "fa-moon");
     darkModeEnabled = false;
