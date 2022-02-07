@@ -235,17 +235,29 @@ header .nav__hamburger, header .nav__hamburger:before, header .nav__hamburger:af
 section {
   text-align: center;
   padding: 0 1em;
-  margin: 0 auto;
+  margin: 5em auto;
   scroll-margin-top: 5vh;
 }
 
-.container__hero {
+.section__title {
+  margin-bottom: 1em;
+}
+
+.container {
   text-align: left;
+}
+
+.container__hero {
   width: 100%;
+}
+
+.container__hero .section__title {
+  margin-bottom: 0;
 }
 
 .hero {
   height: 100vh;
+  margin: 0 auto;
   display: flex;
   align-items: center;
 }
@@ -303,6 +315,34 @@ section {
   60% {
     transform: translateY(-15px);
   }
+}
+
+.about-me__bio p {
+  margin-bottom: 1em;
+}
+
+.about-me__contact-button {
+  margin-top: 2em;
+}
+
+.button {
+  -webkit-border-radius: 6;
+  -moz-border-radius: 6;
+  border-radius: 6px;
+  border: 0;
+  font-family: var(--ff-headings);
+  color: var(--clr-secondary);
+  font-size: var(--fs-body);
+  background: var(--clr-primary);
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.button:hover {
+  background: #C3423F;
+  transition: 0.5s;
+  text-decoration: none;
 }
 
 .project__image img {
