@@ -99,6 +99,10 @@ footer {
   font-family: var(--ff-headings);
 }
 
+.project__description__skills {
+  font-family: var(--ff-headings);
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -359,6 +363,45 @@ section {
   font-size: 3em;
 }
 
+.my-projects__showcase {
+  display: flex;
+  flex-direction: column;
+}
+
+.project__item {
+  margin-bottom: 5em;
+}
+
+.project__item:last-child {
+  margin-bottom: 0;
+}
+
 .project__image img {
-  max-width: 100%;
+  width: 100%;
+  height: auto;
+  max-width: 500px;
+}
+
+.project__description {
+  margin-top: 1em;
+}
+
+.project__description__skills {
+  margin-top: 1em;
+}
+
+.project__description__skills p {
+  margin-bottom: 0.25em;
+}
+
+.project__description__skills .skill__icon {
+  font-size: 2em;
+}
+
+.project__description__links {
+  margin-top: 1.5em;
+}
+
+.project__description__links a:first-child {
+  margin-right: 0.75em;
 }

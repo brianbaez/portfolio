@@ -116,6 +116,14 @@ footer {
   }
 }
 
+.project {
+  &__description {
+    &__skills {
+      font-family: var(--ff-headings);
+    }
+  }
+}
+
 // General Styles
 // HTML
 html {
@@ -397,8 +405,50 @@ section {
 }
 
 // Project Section
-.project {
-  &__image img {
-    max-width: 100%;
+.my-projects {
+  &__showcase {
+    display: flex;
+    flex-direction: column;
   }
+}
+
+.project {
+  &__item {
+    margin-bottom: 5em;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__image img {
+    width: 100%;
+    height: auto;
+    max-width: 500px;
+  }
+
+  &__description {
+    margin-top: 1em;
+
+    &__skills {
+      margin-top: 1em;
+
+      p {
+        margin-bottom: 0.25em;
+      }
+
+      .skill__icon {
+        font-size: 2em;
+      }
+    }
+
+    &__links {
+      margin-top: 1.5em;
+
+      a:first-child {
+        margin-right: 0.75em;
+      }
+    }
+  }
+
 }
