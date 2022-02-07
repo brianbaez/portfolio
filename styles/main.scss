@@ -421,10 +421,14 @@ section {
     }
   }
 
-  &__image img {
-    width: 100%;
-    height: auto;
-    max-width: 500px;
+  &__image {
+    display: flex;
+    justify-content: center;
+    img {
+      width: 100%;
+      height: auto;
+      max-width: 500px;
+    }
   }
 
   &__description {

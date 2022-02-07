@@ -376,6 +376,11 @@ section {
   margin-bottom: 0;
 }
 
+.project__image {
+  display: flex;
+  justify-content: center;
+}
+
 .project__image img {
   width: 100%;
   height: auto;
