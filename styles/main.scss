@@ -180,6 +180,15 @@ header {
       }
     }
 
+    &__dark-mode {
+      cursor: pointer;
+
+      &:hover {
+        color: var(--clr-accent);
+        transition: 0.5s;
+      }
+    }
+
     &__toggle {
       padding: 0.5em 0.1em;
       background: transparent;

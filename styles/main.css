@@ -162,6 +162,15 @@ header .nav__link:hover {
   transition: 0.5s;
 }
 
+header .nav__dark-mode {
+  cursor: pointer;
+}
+
+header .nav__dark-mode:hover {
+  color: var(--clr-accent);
+  transition: 0.5s;
+}
+
 header .nav__toggle {
   padding: 0.5em 0.1em;
   background: transparent;
