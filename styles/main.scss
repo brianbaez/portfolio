@@ -377,6 +377,25 @@ section {
   text-decoration: none;
 }
 
+// Skills Section
+.my-skills {
+  &__icons {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-gap: 1em;
+  }
+}
+
+.skill {
+  &__box {
+    text-align: center;
+  }
+
+  &__icon {
+    font-size: 3em;
+  }
+}
+
 // Project Section
 .project {
   &__image img {

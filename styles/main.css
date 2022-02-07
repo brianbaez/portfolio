@@ -345,6 +345,20 @@ section {
   text-decoration: none;
 }
 
+.my-skills__icons {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-gap: 1em;
+}
+
+.skill__box {
+  text-align: center;
+}
+
+.skill__icon {
+  font-size: 3em;
+}
+
 .project__image img {
   max-width: 100%;
 }
