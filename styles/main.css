@@ -235,6 +235,7 @@ section {
   text-align: center;
   padding: 0 1em;
   margin: 0 auto;
+  scroll-margin-top: 5vh;
 }
 
 .project__image img {
