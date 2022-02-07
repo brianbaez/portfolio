@@ -56,6 +56,7 @@ body {
 input, textarea {
   font-family: var(--ff-headings);
   font-size: var(--fs-contact-form);
+  color: #102734;
 }
 
 footer {
