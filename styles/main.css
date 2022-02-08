@@ -107,10 +107,6 @@ footer {
   font-family: var(--ff-headings);
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   background: var(--clr-secondary);
   line-height: 1.5;
