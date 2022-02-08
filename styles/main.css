@@ -164,7 +164,7 @@ header .nav__link {
   text-decoration: none;
 }
 
-header .nav__link:hover {
+header .nav__link:active {
   color: var(--clr-accent);
   transition: 0.5s;
 }
@@ -175,7 +175,7 @@ header .nav__dark-mode {
   text-align: right;
 }
 
-header .nav__dark-mode:hover {
+header .nav__dark-mode:active {
   color: var(--clr-accent);
   transition: 0.5s;
 }
@@ -287,7 +287,7 @@ section {
   color: var(--clr-primary);
 }
 
-.hero__social-media__link:hover {
+.hero__social-media__link:active {
   color: var(--clr-accent);
   transition: 0.5s;
 }
@@ -302,7 +302,7 @@ section {
   color: var(--clr-primary);
 }
 
-.hero__arrow a:hover {
+.hero__arrow a:active {
   color: var(--clr-accent);
   transition: 0.5s;
 }
@@ -347,7 +347,7 @@ section {
   cursor: pointer;
 }
 
-.button:hover {
+.button:active {
   background: #C3423F;
   transition: 0.5s;
   text-decoration: none;
@@ -453,7 +453,7 @@ footer a {
   margin: 0.25em;
 }
 
-footer a:hover {
+footer a:active {
   color: var(--clr-accent);
   transition: 0.5s;
 }
