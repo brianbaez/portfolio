@@ -19,6 +19,7 @@
   --fs-body: 2.25rem;
   --fs-logo: 4rem;
   --fs-nav-link: 5rem;
+  --fs-skill-name: 1rem;
   --fs-contact-form: 2.5rem;
   --fs-footer: 2.5rem;
 }
@@ -96,7 +97,7 @@ footer {
 
 .skill__name {
   font-family: var(--ff-headings);
-  font-size: 2rem;
+  font-size: var(--fs-skill-name);
 }
 
 .project__description__skills {
