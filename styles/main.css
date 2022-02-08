@@ -19,6 +19,8 @@
   --fs-body: 1rem;
   --fs-logo: 1.75rem;
   --fs-nav-link: 2rem;
+  --fs-social-media: 3rem;
+  --fs-button-text: 1rem;
   --fs-skill-name: 1rem;
   --fs-contact-form: 1.125rem;
   --fs-footer: 1.25rem;
@@ -121,8 +123,8 @@ header {
 
 header .nav {
   background: var(--clr-secondary);
-  min-height: 2em;
-  padding: 0.5em 1.5em;
+  min-height: 2rem;
+  padding: 0.5rem 1.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -150,14 +152,14 @@ header .nav__list {
   height: 100%;
   flex-direction: column;
   align-items: center;
-  margin-top: 3em;
-  margin-right: 1em;
+  margin-top: 3rem;
+  margin-right: 1rem;
   position: absolute;
   right: 0;
 }
 
 header .nav__item {
-  padding: 0.25em 0;
+  padding: 0.25rem 0;
   width: 100%;
   text-align: right;
 }
@@ -183,13 +185,13 @@ header .nav__dark-mode:active {
 }
 
 header .nav__toggle {
-  padding: 0.5em 0.1em;
+  padding: 0.5rem 0.1rem;
   background: transparent;
   border: 0;
   cursor: pointer;
   position: absolute;
-  right: 1.5em;
-  top: 1.5em;
+  right: 1.5rem;
+  top: 1.5rem;
   z-index: 1000;
 }
 
@@ -215,9 +217,9 @@ header .nav__hamburger:after {
 
 header .nav__hamburger, header .nav__hamburger:before, header .nav__hamburger:after {
   background: var(--clr-primary);
-  width: 2em;
+  width: 2rem;
   height: 3px;
-  border-radius: 1em;
+  border-radius: 1rem;
   transition: transform 0.25s ease-in-out;
 }
 
@@ -243,13 +245,13 @@ header .nav__hamburger, header .nav__hamburger:before, header .nav__hamburger:af
 
 section {
   text-align: center;
-  padding: 0 1.5em;
-  margin: 5em auto;
-  scroll-margin-top: 4.5em;
+  padding: 0 1.5rem;
+  margin: 5rem auto;
+  scroll-margin-top: 4.5rem;
 }
 
 .section__title {
-  margin-bottom: 1em;
+  margin-bottom: 1rem;
 }
 
 .container {
@@ -272,7 +274,7 @@ section {
 }
 
 .hero__social-media {
-  margin-top: 2em;
+  margin-top: 2rem;
 }
 
 .hero__social-media__list {
@@ -281,7 +283,7 @@ section {
 }
 
 .hero__social-media__item {
-  padding-right: 1em;
+  padding-right: 1rem;
 }
 
 .hero__social-media__link {
@@ -296,7 +298,7 @@ section {
 
 .hero__arrow {
   position: absolute;
-  bottom: 5em;
+  bottom: 5rem;
 }
 
 .hero__arrow a {
@@ -307,6 +309,10 @@ section {
 .hero__arrow a:active {
   color: var(--clr-accent);
   transition: 0.5s;
+}
+
+.hero .fas, .hero .fab {
+  font-size: var(--fs-social-media);
 }
 
 .bounce {
@@ -328,11 +334,11 @@ section {
 }
 
 .about-me__bio p {
-  margin-bottom: 1em;
+  margin-bottom: 1rem;
 }
 
 .about-me__contact-button {
-  margin-top: 2em;
+  margin-top: 2rem;
 }
 
 .button {
@@ -342,7 +348,7 @@ section {
   border: 0;
   font-family: var(--ff-headings);
   color: var(--clr-secondary);
-  font-size: var(--fs-body);
+  font-size: var(--fs-button-text);
   background: var(--clr-primary);
   padding: 10px 20px 10px 20px;
   text-decoration: none;
@@ -358,7 +364,7 @@ section {
 .my-skills__icons {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  grid-gap: 1em;
+  grid-gap: 1rem;
 }
 
 .skill__box {
@@ -366,7 +372,7 @@ section {
 }
 
 .skill__icon {
-  font-size: 3em;
+  font-size: 3rem;
 }
 
 .my-projects__showcase {
@@ -375,7 +381,7 @@ section {
 }
 
 .project__item {
-  margin-bottom: 5em;
+  margin-bottom: 5rem;
 }
 
 .project__item:last-child {
@@ -394,27 +400,27 @@ section {
 }
 
 .project__description {
-  margin-top: 1em;
+  margin-top: 1rem;
 }
 
 .project__description__skills {
-  margin-top: 1em;
+  margin-top: 1rem;
 }
 
 .project__description__skills p {
-  margin-bottom: 0.25em;
+  margin-bottom: 0.25rem;
 }
 
 .project__description__skills .skill__icon {
-  font-size: 2em;
+  font-size: 2rem;
 }
 
 .project__description__links {
-  margin-top: 1.5em;
+  margin-top: 1.5rem;
 }
 
 .project__description__links a:first-child {
-  margin-right: 0.75em;
+  margin-right: 0.75rem;
 }
 
 .contact-me {
@@ -422,28 +428,28 @@ section {
 }
 
 .contact-me__prompt {
-  margin-bottom: 1em;
+  margin-bottom: 1rem;
 }
 
 .contact-me__prompt p:last-child {
-  margin-top: 0.25em;
+  margin-top: 0.25rem;
 }
 
 .contact-me__form form {
   display: flex;
   flex-direction: column;
-  padding: 2.5em;
-  border: 0.125em solid var(--clr-primary);
+  padding: 2.5rem;
+  border: 0.125rem solid var(--clr-primary);
 }
 
 .contact-me__form form input, .contact-me__form form textarea {
-  margin-bottom: 1em;
-  border: 0.0625em solid var(--clr-primary);
-  padding: 0.5em;
+  margin-bottom: 1rem;
+  border: 0.0625rem solid var(--clr-primary);
+  padding: 0.5rem;
 }
 
 footer {
-  margin: 2em 0 1em;
+  margin: 2rem 0 1rem;
   text-align: center;
   width: 100%;
 }
@@ -452,7 +458,7 @@ footer a {
   font-size: var(--fs-footer-links);
   text-decoration: none;
   color: var(--clr-primary);
-  margin: 0.25em;
+  margin: 0.25rem;
 }
 
 footer a:active {
