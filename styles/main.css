@@ -120,7 +120,7 @@ header {
 header .nav {
   background: var(--clr-secondary);
   min-height: 5vh;
-  padding: 0 1em;
+  padding: 1em;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -184,13 +184,14 @@ header .nav__toggle {
   cursor: pointer;
   position: absolute;
   right: 1.3em;
-  top: 1.3em;
+  top: 1.5em;
   z-index: 1000;
 }
 
 header .nav__hamburger {
   display: block;
   position: relative;
+  margin: 2em 0;
 }
 
 header .nav__hamburger:before, header .nav__hamburger:after {
@@ -201,17 +202,17 @@ header .nav__hamburger:before, header .nav__hamburger:after {
 }
 
 header .nav__hamburger:before {
-  bottom: 6px;
+  bottom: 1.2em;
 }
 
 header .nav__hamburger:after {
-  top: 6px;
+  top: 1.2em;
 }
 
 header .nav__hamburger, header .nav__hamburger:before, header .nav__hamburger:after {
   background: var(--clr-primary);
-  width: 2em;
-  height: 3px;
+  width: 5em;
+  height: 0.5em;
   border-radius: 1em;
   transition: transform 0.25s ease-in-out;
 }
@@ -229,7 +230,7 @@ header .nav__hamburger, header .nav__hamburger:before, header .nav__hamburger:af
 }
 
 .nav__open .nav__hamburger:before {
-  transform: rotate(90deg) translate(6px);
+  transform: rotate(90deg) translate(1.2em);
 }
 
 .nav__open .nav__hamburger:after {
