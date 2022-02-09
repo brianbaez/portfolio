@@ -188,7 +188,7 @@ header .nav__toggle {
   cursor: pointer;
   position: absolute;
   right: 1.5rem;
-  top: 1.5rem;
+  top: 1.25rem;
   z-index: 1000;
 }
 
