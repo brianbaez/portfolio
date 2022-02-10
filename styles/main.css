@@ -576,6 +576,12 @@ footer a:active {
   h3 {
     font-size: var(--fs-h3);
   }
+  .hero__social-media__item {
+    padding-right: 1.5rem;
+  }
+  .hero__social-media__item:last-child {
+    padding-right: 0;
+  }
   .my-skills__icons {
     grid-template-columns: repeat(6, minmax(0, 1fr));
   }

@@ -670,6 +670,18 @@ footer {
     font-size: var(--fs-h3);
   }
 
+  .hero {
+    &__social-media {
+      &__item {
+        padding-right: 1.5rem;
+
+        &:last-child {
+          padding-right: 0;
+        }
+      }
+    }
+  }
+
   .my-skills {
     &__icons {
       grid-template-columns: repeat(6, minmax(0, 1fr));
