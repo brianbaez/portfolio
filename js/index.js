@@ -34,7 +34,7 @@ navDarkMode.addEventListener("click", () => {
   }
 });
 
-// Smooth scrolling
+// Smooth Scrolling
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
@@ -43,3 +43,10 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         });
     });
 });
+
+// Animations
+gsap.timeline()
+  .from(".hero__intro", {opacity: 0, duration: 0.5, y: 75})
+  .from(".hero__social-media", {opacity: 0, duration: 0.5})
+  .from(".nav", {opacity: 0, duration: 0.25, y: -50})
+  .from(".arrow", {opacity: 0, duration: 0.25}, "-=0.25");
