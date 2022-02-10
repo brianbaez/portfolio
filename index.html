@@ -7,6 +7,9 @@
 
     <title>Brian Baez | Full Stack Developer</title>
 
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./assets/img/rocket.ico">
+
     <!-- CSS -->
     <link rel="stylesheet" href="./styles/main.css">
 
@@ -23,25 +26,27 @@
   <body>
     <!-- Header -->
     <header>
-      <nav class="nav">
-        <div class="nav__logo">
-          <a class="nav__link" href="#hero">Brian Baez</a>
-        </div>
+      <div class="nav-container">
+        <nav class="nav">
+          <div class="nav__logo">
+            <a class="nav__link" href="#hero">Brian Baez</a>
+          </div>
 
-        <div class="nav__menu">
-          <ul class="nav__list">
-            <li class="nav__item"><a class="nav__link" href="#about">About</a></li>
-            <li class="nav__item"><a class="nav__link" href="#skills">Skills</a></li>
-            <li class="nav__item"><a class="nav__link" href="#projects">Projects</a></li>
-            <li class="nav__item"><a class="nav__link" href="#contact">Contact</a></li>
-            <a class="nav__dark-mode far fa-moon" id="nav__dark-mode"></a>
-          </ul>
-        </div>
+          <div class="nav__menu">
+            <ul class="nav__list">
+              <li class="nav__item"><a class="nav__link" href="#about">About</a></li>
+              <li class="nav__item"><a class="nav__link" href="#skills">Skills</a></li>
+              <li class="nav__item"><a class="nav__link" href="#projects">Projects</a></li>
+              <li class="nav__item"><a class="nav__link" href="#contact">Contact</a></li>
+              <a class="nav__dark-mode far fa-moon" id="nav__dark-mode"></a>
+            </ul>
+          </div>
 
-        <button class="nav__toggle" aria-label="toggle navigation">
-          <span class="nav__hamburger"></span>
-        </button>
-      </nav>
+          <button class="nav__toggle" aria-label="toggle navigation">
+            <span class="nav__hamburger"></span>
+          </button>
+        </nav>
+      </div>
 
       <!-- Hero Section -->
       <section class="hero" id="hero">
@@ -183,7 +188,7 @@
             <p>Leave a message below and I look forward to meeting you!</p>
           </div>
           <div class="contact-me__form">
-            <form action="" method="post">
+            <form action="mailto:brianbaez.bab@gmail.com" method="POST">
               <input type="text" name="name" placeholder="Name" required>
               <input type="email" name="email" placeholder="Email" required>
               <textarea name="message" rows="10" placeholder="Message" required></textarea>

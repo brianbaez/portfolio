@@ -139,17 +139,23 @@ header {
   margin: 0 auto;
   height: 100vh;
 
+  .nav-container {
+    position: fixed;
+    z-index: 10;
+    height: 4rem;
+    width: 100%;
+    background-color: var(--clr-secondary);
+  }
+
   .nav {
     background: var(--clr-secondary);
-    min-height: 2rem;
     padding: 0.5rem 1.5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 10;
+    height: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
 
     &__menu {
       background: var(--clr-secondary);
@@ -270,7 +276,8 @@ section {
   text-align: center;
   padding: 0 1.5rem;
   margin: 5rem auto;
-  scroll-margin-top: 4.5rem;
+  scroll-margin-top: 5rem;
+  max-width: 1200px;
 }
 
 .section {
@@ -432,6 +439,7 @@ section {
   &__image {
     display: flex;
     justify-content: center;
+
     img {
       width: 100%;
       height: auto;
@@ -441,6 +449,10 @@ section {
 
   &__description {
     margin-top: 1rem;
+
+    &__summary {
+      margin-top: 1em;
+    }
 
     &__skills {
       margin-top: 1rem;
@@ -471,8 +483,8 @@ section {
   &__prompt {
     margin-bottom: 1rem;
 
-    p:last-child {
-      margin-top: 0.25rem;
+    p {
+      margin-top: 1rem;
     }
   }
 
@@ -505,6 +517,191 @@ footer {
     &:active {
       color: var(--clr-accent);
       transition: 0.5s;
+    }
+  }
+}
+
+// iPad LOL
+@media screen and (min-width: 800px) {
+  // Custom Properties
+  :root {
+    // Font Sizes
+    --fs-h1: 5.5rem;
+    --fs-h2: 2.75rem;
+    --fs-h3: 1.5rem;
+    --fs-body: 1.25rem;
+    --fs-logo: 1.75rem;
+    --fs-nav-link: 1.25rem;
+    --fs-social-media: 3.25rem;
+    --fs-button-text: 1.25rem;
+    --fs-skill-name: 1.25rem;
+    --fs-contact-form: 1.25rem;
+    --fs-footer: 1.25rem;
+    --fs-footer-links: 2.5rem;
+  }
+
+  // Typography
+  h1 {
+    font-size: var(--fs-h1);
+  }
+
+  h2 {
+    font-size: var(--fs-h2);
+  }
+
+  h3 {
+    font-size: var(--fs-h3);
+  }
+
+  body {
+    font-size: var(--fs-body);
+  }
+
+  input, textarea {
+    font-size: var(--fs-contact-form);
+  }
+
+  .nav {
+    &__logo a {
+      font-size: var(--fs-logo);
+    }
+
+    &__link, &__dark-mode {
+      font-size: var(--fs-nav-link);
+    }
+  }
+
+  .hero {
+    .fas, .fab {
+      font-size: var(--fs-social-media);
+    }
+  }
+
+  .button {
+    font-size: var(--fs-button-text);
+  }
+
+  .skill {
+    &__name {
+      font-size: var(--fs-skill-name);
+    }
+  }
+
+  footer {
+    font-size: var(--fs-footer);
+
+    a {
+      font-size: var(--fs-footer-links);
+    }
+  }
+
+  // General Styles
+  header {
+    .nav {
+      padding: 0.5rem 2.5rem;
+
+      &__menu {
+        position: relative;
+        transform: translateX(0%);
+        transition: none;
+      }
+
+      &__list {
+        position: relative;
+        flex-direction: row;
+        margin: 0;
+      }
+
+      &__item, &__dark-mode {
+        display: flex;
+        padding: 0 1rem;
+      }
+
+      &__toggle {
+        display: none;
+      }
+    }
+  }
+
+  section {
+    padding: 0 2.5rem;
+  }
+
+  .my-skills {
+    &__icons {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+  }
+
+  .nav__link, .nav__dark-mode, .fab, .fas {
+    &:hover {
+      color: var(--clr-accent);
+      transition: 0.5s;
+    }
+  }
+
+  .button {
+    &:hover {
+      background: var(--clr-accent);
+      transition: 0.5s;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  // Custom Properties
+  :root {
+    // Font Sizes
+    --fs-h1: 6rem;
+    --fs-h2: 3rem;
+    --fs-h3: 1.75rem;
+  }
+
+  // Typography
+  h1 {
+    font-size: var(--fs-h1);
+  }
+
+  h2 {
+    font-size: var(--fs-h2);
+  }
+
+  h3 {
+    font-size: var(--fs-h3);
+  }
+
+  .my-skills {
+    &__icons {
+      grid-template-columns: repeat(6, minmax(0, 1fr));
+    }
+  }
+
+  .project {
+    &__item {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    &__image {
+      order: 1;
+      width: 75%;
+    }
+  }
+
+  .contact-me {
+    &__inner-container {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    &__prompt {
+      margin-right: 1.5em;
+    }
+  }
+
+  footer {
+    a {
+      margin: 0.5rem;
     }
   }
 }
