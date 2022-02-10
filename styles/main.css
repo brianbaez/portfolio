@@ -107,6 +107,11 @@ footer {
   font-family: var(--ff-headings);
 }
 
+.status p {
+  font-family: var(--ff-headings);
+  font-size: var(--fs-contact-form);
+}
+
 body {
   background: var(--clr-secondary);
   line-height: 1.5;
@@ -456,6 +461,13 @@ section {
   padding: 0.5rem;
 }
 
+.contact-me__form form .status {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 footer {
   margin: 2rem 0 1rem;
   text-align: center;
@@ -518,6 +530,9 @@ footer a:active {
   }
   .skill__name {
     font-size: var(--fs-skill-name);
+  }
+  .status p {
+    font-size: var(--fs-contact-form);
   }
   footer {
     font-size: var(--fs-footer);
