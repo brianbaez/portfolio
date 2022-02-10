@@ -81,5 +81,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 gsap.timeline()
   .from(".hero__intro", {opacity: 0, duration: 0.5, y: 75})
   .from(".hero__social-media", {opacity: 0, duration: 0.5})
-  .from(".nav", {opacity: 0, duration: 0.25, y: -50})
+  .from(".nav__logo", {opacity: 0, duration: 0.25, y: -50})
+  .from(".nav__list", {opacity: 0, duration: 0.25, y: -50}, "-=0.25")
   .from(".arrow", {opacity: 0, duration: 0.25}, "-=0.25");
