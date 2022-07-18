@@ -37,6 +37,7 @@ export const projectItems = [
     name: "Portfolio",
     summary: "This portfolio website! It was the first project I created and features a responsive design, light/dark mode, and JavaScript animations using GSAP.",
     technologies: [
+      "devicon-react-original",
       "devicon-html5-plain",
       "devicon-css3-plain",
       "devicon-javascript-plain",
