@@ -1,0 +1,30 @@
+// Custom Properties
+:root {
+  // Colors
+  --clr-primary: #102734;
+  --clr-secondary: #FFF;
+  --clr-accent: #C3423F;
+}
+
+// Font Families
+$ff-headings: "Roboto Mono", monospace;
+$ff-body: "Roboto", sans-serif;
+
+// Font Weights
+$fw-bold: 700;
+$fw-regular: 500;
+$fw-light: 300;
+
+// Font Sizes
+$fs-h1: 3.25rem;
+$fs-h2: 1.625rem;
+$fs-h3: 1.5rem;
+$fs-body: 1rem;
+$fs-logo: 1.75rem;
+$fs-nav-link: 2rem;
+$fs-social-media: 3rem;
+$fs-button-text: 1rem;
+$fs-skill-name: 1rem;
+$fs-contact-form: 1.125rem;
+$fs-footer: 1.25rem;
+$fs-footer-links: 2rem;
