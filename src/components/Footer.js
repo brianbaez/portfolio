@@ -4,8 +4,12 @@ import React from "react";
 
 function Footer() {
   return (
-    <div className="Footer">
-    </div>
+    <footer className="Footer">
+      <a class="social-media__footer fab fa-linkedin" href="https://www.linkedin.com/in/brianbaez/"></a>
+      <a class="social-media__footer fab fa-github-square" href="https://github.com/brianbaez"></a>
+      <a class="social-media__footer fas fa-envelope-square" href="mailto:brianbaez.bab@gmail.com"></a>
+      <p class="copyright">© 2022 Brian Baez</p>
+    </footer>
   );
 }
 
