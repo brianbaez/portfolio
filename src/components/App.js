@@ -9,7 +9,7 @@ function App() {
   return (
     <Router basename={process.env.PUBLIC_URL}>
       <Routes>
-        <Route exact path="/portfolio" element={<Home />} />
+        <Route exact path="/" element={<Home />} />
       </Routes>
     </Router>
   );
