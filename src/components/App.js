@@ -7,7 +7,7 @@ import Home from "./Home";
 
 function App() {
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <Routes>
         <Route exact path="/portfolio" element={<Home />} />
       </Routes>
