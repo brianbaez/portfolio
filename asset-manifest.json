@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/static/css/main.33fdd7ec.css",
-    "main.js": "/static/js/main.24b22d8a.js",
+    "main.js": "/static/js/main.a96f1189.js",
     "static/media/home-library.png": "/static/media/home-library.dfa4185dfebc8eaed30a.png",
     "static/media/star-wars-holocron.png": "/static/media/star-wars-holocron.e621a6bc9d5a836c8759.png",
     "static/media/portfolio.png": "/static/media/portfolio.27405535f10273318e70.png",
     "index.html": "/index.html",
     "main.33fdd7ec.css.map": "/static/css/main.33fdd7ec.css.map",
-    "main.24b22d8a.js.map": "/static/js/main.24b22d8a.js.map"
+    "main.a96f1189.js.map": "/static/js/main.a96f1189.js.map"
   },
   "entrypoints": [
     "static/css/main.33fdd7ec.css",
-    "static/js/main.24b22d8a.js"
+    "static/js/main.a96f1189.js"
   ]
 }
