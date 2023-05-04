@@ -1,0 +1,114 @@
+// Imports
+@import "Variables.scss";
+
+// Typography
+// Headings
+h1, h2, h3 {
+  font-family: $ff-headings;
+  line-height: 1;
+}
+
+h2, h3 {
+  font-weight: $fw-regular;
+}
+
+h1 {
+  font-size: $fs-h1;
+  font-weight: $fw-bold;
+}
+
+h2 {
+  font-size: $fs-h2;
+}
+
+h3 {
+  font-size: $fs-h3;
+}
+
+// Body
+body {
+  font-family: $ff-body;
+  font-size: $fs-body;
+  font-weight: $fw-light;
+  color: var(--clr-primary);
+  background-color: var(--clr-secondary);
+}
+
+// Input, Text Area
+input, textarea {
+  font-family: $ff-headings;
+  font-size: $fs-contact-form;
+  color: var(--clr-primary);
+}
+
+// Footer
+footer {
+  font-family: $ff-headings;
+  font-size: $fs-footer;
+}
+
+// Section
+.section {
+  &__title {
+    color: var(--clr-accent);
+  }
+}
+
+// Nav
+.nav {
+  font-family: $ff-headings;
+
+  &__logo a {
+    font-size: $fs-logo;
+    color: var(--clr-primary);
+  }
+
+  &__link, &__dark-mode {
+    color: var(--clr-primary);
+    font-size: $fs-nav-link;
+  }
+}
+
+// Hero
+.hero {
+  &__hello, &__name {
+    color: var(--clr-primary);
+  }
+
+  &__position {
+    color: var(--clr-accent);
+  }
+}
+
+// About
+.about-me {
+  span {
+    color: var(--clr-accent);
+    font-weight: $fw-bold;
+  }
+}
+
+// Skill
+.skill {
+  &__name {
+    font-family: $ff-headings;
+    font-size: $fs-skill-name;
+  }
+}
+
+// Project
+.project {
+  &__description {
+    &__skills {
+      font-family: $ff-headings;
+    }
+  }
+}
+
+// Status
+.status {
+  p {
+    font-family: $ff-headings;
+    font-size: $fs-contact-form;
+  }
+}
